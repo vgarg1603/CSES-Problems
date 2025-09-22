@@ -36,6 +36,7 @@
 *.exe
 *.out
 *.app
+*.dSYM/
 
 # debug information files
 *.dwo
