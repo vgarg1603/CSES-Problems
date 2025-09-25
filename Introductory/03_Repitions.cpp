@@ -23,16 +23,20 @@ int main()
 
     for (int i = 1; i < s.size(); i++)
     {
+        // If curr elem is equal to last increment len
         if (s[i] == s[i - 1])
         {
             len++;
         }
         else
         {
+            // If diff elem then update maxLen and reset len to 1
             maxLen = max(maxLen, len);
             len = 1;
         }
     }
+
+    // Finally update maxLen as last elem in the str can be longest consecutive
     maxLen = max(maxLen, len);
 
     cout << maxLen << "\n";
